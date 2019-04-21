@@ -8,60 +8,101 @@ body, html {
     width: 100%;
 }
 
-body {
-    margin-top: 57px;
-}
-
-.row, .col, .container {
+.row, .col {
     display: flex;
-}
-
-.row, .container{
     justify-content: center;
 }
 
-.container {
+.col {
     flex-direction: column;
-    justify-content: flex-start;
-    width: 400px;
-    height: 400px;
-    margin: 0 auto;
-}
-
-.wrapper {
-    height: 400px;
+    margin: auto 0;
 }
 
 .result {
-    height: 50px;
+    height: 5%;
 }
 
-form.container {
-    margin: 50px 0 0 0;
-    padding: 20px;
-    height: 200px;
-    justify-content: center;
-    align-content: center;
+form.col {
+    margin: 5% 0 0 0;
+    padding: 2%;
+    height: 35%;
 }
 
-div {
-    border: 1pt solid grey;
+form p {
+    margin: 2vw;
 }
 
 header {
-    position: fixed;
-    top: 0;
     width: 100%;
-    text-align: center;
+    height: 10vh;
+    margin: 2% 0;
+    align-items: center;
 }
 
 h1 {
-    margin: 20px 0 0 0;
+    font-size: 9vw;
 }
 
-span.right {
-    align-self: flex-end;
+.stylized{
     font-style: italic;
-    font-size: 9pt;
-    margin: 0 auto 0 0;
+    font-size: 3vw;
+    padding-top: 1%;
+}
+
+#form-labels {
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2%;
+}
+
+div p {
+    margin: 0;
+    white-space: nowrap;
+    font-size: 5vw;
+}
+
+div span {
+    margin: 0;
+    white-space: nowrap;
+    font-size: 2vw;
+}
+
+.end {
+    text-align: end;
+    padding-right: 1%;
+}
+
+.start {
+    text-align: start;
+    padding-left: 1%;
+}
+
+option {
+    font-size: 4vw;
+}
+
+#num-results {
+    width: 4vw;
+    min-width: 20px;
+}
+
+#num-results::placeholder {
+    font-size: 3vw;
+}
+
+@media only screen and (min-width: 700px) {
+    header {
+        width: 90%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #num-results {
+        width: 6vw;
+        padding-top: 2%;
+    }
+    #num-results::placeholder {
+        font-size: 5vw;
+        
+    }
 }
