@@ -11,6 +11,7 @@ body, html {
 .row, .col {
     display: flex;
     justify-content: center;
+    align-items: stretch;
 }
 
 .col {
@@ -20,12 +21,20 @@ body, html {
 
 .result {
     height: 5%;
+    margin: 1%;
+    padding: 1%;
+}
+
+.result span {
+    margin: .1%;
+    padding: .1%;
 }
 
 form.col {
     margin: 5% 0 0 0;
     padding: 2%;
-    height: 35%;
+    width: 100%;
+    height: 40%;
 }
 
 form p {
@@ -41,6 +50,13 @@ header {
 
 h1 {
     font-size: 9vw;
+    margin: auto;
+}
+
+h2 {
+    padding: 1%;
+    margin: 1%;
+    font-size: 6vw;
 }
 
 .stylized{
@@ -52,7 +68,6 @@ h1 {
 #form-labels {
     align-items: center;
     justify-content: space-between;
-    padding: 0 2%;
 }
 
 div p {
@@ -64,7 +79,7 @@ div p {
 div span {
     margin: 0;
     white-space: nowrap;
-    font-size: 2vw;
+    font-size: 5vw;
 }
 
 .end {
@@ -84,6 +99,7 @@ option {
 #num-results {
     width: 4vw;
     min-width: 20px;
+    font-size: 3vw;
 }
 
 #num-results::placeholder {
@@ -100,9 +116,10 @@ option {
     #num-results {
         width: 6vw;
         padding-top: 2%;
+        font-size: 48pt;
     }
     #num-results::placeholder {
-        font-size: 5vw;
+        font-size: 48pt;
         
     }
 }
